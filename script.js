@@ -1,6 +1,16 @@
 const accordion = document.querySelectorAll('.accordion')
 console.log(accordion.length);
 
+// IIFE - to make sure the accordions are opened up when the page loads
+(function(){
+    accordion.forEach((acc)=>{
+        const accordionData = acc.nextElementSibling
+        if (!accordionData.style.maxHeight){
+            accordionData.style.maxHeight = accordionData.scrollHeight + "px";
+        }
+    })
+})()
+
 
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function(e){

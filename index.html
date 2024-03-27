@@ -80,19 +80,16 @@
       <div class="main">
         <div class="sidebar">
             <div class="custom-accordion">
-                <button class="accordion">Category<i class="fas fa-angle-down accordion-icon"></i>
+                <button class="accordion active-accordion">Category<i class="fas fa-angle-down accordion-icon"></i>
                 </button>
-                <div class="accordion-data">
-                    <div class="options">
-                        <input type="checkbox" name="Toys" id="toys">
-                        <label for="toys">Toys</label>
-                        <span class="category-value">99</span>
-                    </div>
-                    <div class="options">
-                        <input type="checkbox" name="Toys" id="toys">
-                        <label for="toys">Toys</label>
-                        <span class="category-value">99</span>
-                    </div>
+                <div class="accordion-data product-category">
+                  <!-- Options -->
+                </div>
+            </div>
+            <div class="custom-accordion">
+                <button class="accordion active-accordion">Age Group<i class="fas fa-angle-down accordion-icon"></i>
+                </button>
+                <div class="accordion-data age-category">
                     <div class="options">
                         <input type="checkbox" name="Toys" id="toys">
                         <label for="toys">Toys</label>
@@ -101,28 +98,7 @@
                 </div>
             </div>
             <div class="custom-accordion">
-                <button class="accordion">Category<i class="fas fa-angle-down accordion-icon"></i>
-                </button>
-                <div class="accordion-data">
-                    <div class="options">
-                        <input type="checkbox" name="Toys" id="toys">
-                        <label for="toys">Toys</label>
-                        <span class="category-value">99</span>
-                    </div>
-                    <div class="options">
-                        <input type="checkbox" name="Toys" id="toys">
-                        <label for="toys">Toys</label>
-                        <span class="category-value">99</span>
-                    </div>
-                    <div class="options">
-                        <input type="checkbox" name="Toys" id="toys">
-                        <label for="toys">Toys</label>
-                        <span class="category-value">99</span>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-accordion">
-                <button class="accordion">Category<i class="fas fa-angle-down accordion-icon"></i>
+                <button class="accordion active-accordion">Price<i class="fas fa-angle-down accordion-icon"></i>
                 </button>
                 <div class="accordion-data">
                     <div class="options">
@@ -134,89 +110,18 @@
             </div>
         </div>
         <div class="cards-container">
-
           <!-- Card -->
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img src="https://www.superherotoystore.com/cdn/shop/products/AAAK347AABY156-1_400x.jpg?v=1679380741" alt="Joker">
-            </div>
-            <div class="card-text">
-              <p class="card-title">Joker</p>
-              <p class="card-title">$35.99</p>
-            </div>
-            <button class="addToCart">Add to Cart</button>
-          </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+  <script type="module" src="data.js"></script>
   <script
     src="https://kit.fontawesome.com/4a5661b86a.js"
     crossorigin="anonymous"
